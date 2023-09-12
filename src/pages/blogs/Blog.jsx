@@ -1,38 +1,21 @@
-import { Link, useLoaderData } from "react-router-dom"
-import blogs from "../../data/Data"
+import { Link, useLoaderData } from 'react-router-dom'
+import { jobdata } from './JobData'
+import Job from './Job'
+
+
 export default function Blog() {
-  const blogs = useLoaderData()
+
 
   return (
     <div className="faq">
-        <h3>Job Openings</h3>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
-        </div>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
-        </div>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
-        </div>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
-        </div>
-  
-        <div className="question">
-          <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, recusandae doloribus qui molestias similique asperiores incidunt. Obcaecati tenetur consectetur dolorem eius ex, ad, laudantium inventore quia odio minus eligendi ipsa?</p>
-        </div>
-  
-      </div>
+      <h3>
+        Unlock Your Career Potential: Explore Diverse Opportunities in the World
+        of Tech Jobs!
+      </h3>
+
+      {jobdata.map((item) => {
+        return <Job item={item} key={item.id} />
+      })}
+    </div>
   )
 }
-

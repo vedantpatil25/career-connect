@@ -2,7 +2,7 @@
 
 :root {
   --primary: #bc4123;
-  --secondary: #2b3452;
+  --secondary: #051615cc;
 }
 body {
   margin: 0;
@@ -35,9 +35,10 @@ header nav {
   margin: 0 auto;
   
 }
-header nav h1 {
+header nav h3 {
   margin-right: auto;
   border-bottom: 3px solid var(--primary);
+  
 }
 header nav a{
   text-decoration: none;
@@ -127,29 +128,18 @@ form label span {
 p{
   text-align: justify;
 }
-/* .home
-{
-  position: relative;
-  top: 80px;
-}
-.about
-{
-  position: relative;
-  top: 80px;
-}
-.help-layout
-{
-  position: relative;
-  top: 80px;
-}
-.careers-layout
-{
-  position: relative;
-  top: 80px;
-}
-*/
 
-/* .header__container{
-  position: fixed;
-  margin: auto;
-}  */
+strong{
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav__button{
+    /* padding: 0.2rem; */
+  }
+  header nav{
+    gap:0px;
+    font-size: smaller;
+  }
+}

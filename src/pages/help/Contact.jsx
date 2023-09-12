@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
       <div className="contact">
-        <h3>Contact us for job posting . . .</h3>
+        <h3>Contact us</h3>
         <form>
           <label>
             <span>Your email:</span>

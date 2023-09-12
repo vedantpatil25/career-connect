@@ -8,7 +8,7 @@ export default function Home() {
         <main>
           <div>
             <img src={home__resume} alt="logo image" style={{width:'10rem', paddingBottom:'2rem'}}/>
-            <h1>Welcome to CareerConnect - Where Your Dream Job Awaits!</h1>
+            <p style={{color: 'var(--primary)', fontSize:'larger'}}>Welcome to CareerConnect - Where Your Dream Job Awaits!</p>
             <p>
               At CareerConnect, we understand the significance of finding the
               perfect job one that aligns with your passions, skills, and
@@ -20,11 +20,12 @@ export default function Home() {
             </p>
 
             <a href="/blogs">
-              <button style={{padding:'1rem', fontSize:'1.2rem', marginTop:'2rem'}}>Explore the opportunities !</button>
+              <button style={{padding:'1rem', fontSize:'1.2rem', marginTop:'2rem'}}>Discover Openings </button>
             </a>
           </div>
         </main>
-        <footer>
+        
+        <footer style={{marginTop:'10rem'}}>
           <p>&copy; {new Date().getFullYear()} CareerConnect</p>
         </footer>
       </div>

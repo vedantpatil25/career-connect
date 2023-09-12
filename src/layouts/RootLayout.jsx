@@ -7,11 +7,11 @@ function RootLayout() {
         
       <header>
         <nav>
-          <h1>CareerConnect</h1>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="about">About</NavLink>
-          <NavLink to="help">Help</NavLink>
-          <NavLink to="blogs">Jobs</NavLink>   
+          <h3 className="website__logo">CareerConnect</h3>
+          <NavLink to="/" className='nav__button'>Home</NavLink>
+          <NavLink to="about" className='nav__button'>About</NavLink>
+          <NavLink to="help" className='nav__button'>Help</NavLink>
+          <NavLink to="blogs" className='nav__button'>Jobs</NavLink>   
         </nav>
       </header>
 
